@@ -1,0 +1,33 @@
+
+.main-body {
+  background-color: rgb(250, 250, 250);
+  min-height: 100vh;
+}
+
+#main-content {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.task {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed-tasks {
+  margin-top: 20px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
