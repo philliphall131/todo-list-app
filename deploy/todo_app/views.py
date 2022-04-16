@@ -4,6 +4,10 @@ from .models import *
 from .views_auth import *
 from rest_framework import permissions
 
+def send_the_homepage(request):
+    theIndex = open('build/index.html').read()
+    return HttpResponse(theIndex)
+
 class TaskListView(ModelViewSet):
     serializer_class = TaskListSerializer
 

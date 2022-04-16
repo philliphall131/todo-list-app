@@ -8,8 +8,9 @@ r.register("tasks", TaskView, basename="task")
 r.register('users', UserViewSet, basename='user')
 
 urlpatterns = [
-    path("", include(r.urls)),
-    path('logout/', handle_logout),
-    path('login/', handle_login),
-    path('whoami/', who_am_i)
+    path('', send_the_homepage),
+    path("api/", include(r.urls)),
+    path('api/logout/', handle_logout),
+    path('api/login/', handle_login),
+    path('api/whoami/', who_am_i)
 ]
